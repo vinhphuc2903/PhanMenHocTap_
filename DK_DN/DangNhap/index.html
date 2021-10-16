@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Form -Login</title>
+</head>
+<body>
+<div class ="container">
+    <form class="form-login">
+        <h1>Đăng nhập</h1>
+        <div class = "form-text">
+            <label class="form-label">Username</label>
+            <input id="fullname" name="fullname" type="text">
+        </div>
+        <div class = "form-text">
+            <label class="form-label">Password</label>
+            <input name ="pass" type="password">
+        </div>
+        <button>Đăng nhập</button>
+        <!-- file:///D:/CODE_KI5/C_N_WEB/DK_DN/DangKy/dk.html -->
+        <span class="nav-indicator">Bạn chưa có tài khoản? Đăng ký<a href="http://127.0.0.1:5500/DK_DN/DangKy/dk.html" class="nav-item" target="center">Tại đây</a></span>
+    </form>
+</div>
+<script>
+    const formLogin = document.querySelectorAll('.form-text input')
+    const formLabel = document.querySelectorAll('.form-text label')
+    for(let i=0;i<2;i++)
+    {
+        formLogin[i].aadEventListenner("mouseover",function(){
+            formLabel[i].classList.add(".form-text focus")
+        })
+        formLogin[i].aadEventListenner("mouseout",function(){
+            if(formLogin[i].value == "")
+                formLabel[i].classList.remove("focus")
+        })
+    }
+</script>   
+</body>
+</html>
