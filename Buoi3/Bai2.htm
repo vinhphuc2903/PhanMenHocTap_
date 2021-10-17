@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script language = "JavaScript">
+        function DoiChu()
+        {
+            var textT = document.f1.t1.value
+            document.f1.t1.value = textT.toUpperCase()
+        }
+        function SelectIndex1()
+        {
+            var st1 = document.f1.t1.value
+            if(st1 > 4) document.f1.t1.value = ""
+            else document.f1.s1.selectedIndex = st1
+            document.f1.t1.focus()
+
+        }
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="document.f1.t1.focus()"> 
+    <form name = f1 action="" method="">
+        <select name=s1>
+            <option>Index 0</option>
+            <option>Index 1</option>
+            <option>Index 2</option>
+            <option>Index 3</option>
+        </select>
+        <input type=text name = t1>
+        <input type=button name = b1 value="OK" onclick="SelectIndex1()">
+    </form>
+</body>
+</html>

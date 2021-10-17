@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script language= "JavaScript">
+        function DoiMau()
+        {
+            var bien = document.form1.txt1.value
+            document.bgColor = bien
+        }
+        function ChuHoa()
+        {
+            var textT = document.form1.txt1.value
+            document.form1.txt1.value = textT.toUpperCase()
+        }
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body bgcolor="AABBCC">
+
+    <form name =form1 method="" action="">
+        <input type = text name="txt1" value="" onblur="ChuHoa()" >
+        <input type ="button" name = b1 value = "OK" onclick="DoiMau()">
+        <input type ="button" name = b1 value = "Reset" onclick="Reset">
+    </form>
+    
+</body>
+</html>

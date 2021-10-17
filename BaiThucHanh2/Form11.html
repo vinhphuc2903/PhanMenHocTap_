@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script language="JavaScript">
+        function KiemTra()
+        {
+            var Username = document.f1.u1.value;
+            var Password = document.f1.p1.value;     
+            if( Username == "" || Password == "")
+                alert("Vui long nhap day du thong tin")
+            else if( Username == "ABC" && Password =="123456")
+                document.write("Dang nhap thanh cong")   
+                    else 
+                    {   
+                        alert("Dang nhap that bai");
+                        Reset();
+                    }
+        }
+        function Reset()
+        {
+            document.f1.u1.value ="";
+            document.f1.p1.value = "";
+        }
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body bgcolor="99FF99" Topmargin="10" leftmargin="50">
+    <form name = f1 action="" method="">
+        <h1>Login</h1>
+        <br>Username&emsp;</B>
+        <input type = "text" name="u1" value="" >
+        <br></b>
+        <BR>Password &emsp;</B>
+        <input type="text" name= "p1" value="">
+        <br></b>
+        <br>&emsp;&emsp;</B>
+        <input type="button" name="b1" value="OK" onclick="KiemTra()">
+        <b>&emsp;&emsp;</B>
+        <input type="button" name="b2" value="Reset" onclick="Reset()">
+    </form>
+</body>
+</html>

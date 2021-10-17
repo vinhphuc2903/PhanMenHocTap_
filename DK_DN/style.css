@@ -30,8 +30,6 @@ a{
     /* background: linear-gradient(to bottom right,var(--bg1),var(--bg2)); */
     background-image: linear-gradient(45deg, rgba(85, 37, 95, 0.5),rgba(37, 22, 170) ),
     url(https://www8.gsb.columbia.edu/articles/sites/articles/files/styles/article_standard_1x/public/article_detailedimage/img-iaw-pietersen-1706.jpg?itok=QNKHvscj&c=47242e0b7fad2eae34d93ffa55929a6d);   
-    background-size: 100%;
-    background-repeat: no-repeat;
 }
 .form-login{
     width: 300px;
